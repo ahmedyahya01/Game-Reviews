@@ -1,0 +1,189 @@
+/*theme customize */
+[data-theme="dark"] {
+  --main-color: #272b30;
+  --secondory-color: #272b3057;
+  --color-text: #fff;
+  --btn-main-color: #32383e;
+  --border-color: #1f2326;
+}
+
+[data-theme="white"] {
+  --main-color: #ffffff; /* خلفية بيضاء نقية */
+  --secondory-color: #f9fafb; /* خلفية ثانوية رمادية فاتحة جدًا */
+  --color-text: #1a1a1a; /* لون النص رمادي غامق قريب من الأسود */
+  --btn-main-color: #f0f4ff; /* لون الأزرار أزرق باهت ناعم */
+  --btn-hover-color: #d6e4ff; /* لون هوفر للأزرار */
+  --border-color: #e5e7eb; /* لون الحدود رمادي فاتح متناسق */
+}
+
+/* End theme customize */
+/* Start Global */
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--btn-main-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-text);
+  border-radius: 10px;
+  height: 50px;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  background-color: var(--main-color);
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nerko One", cursive;
+  color: var(--color-text) !important;
+}
+
+ul li a {
+  text-transform: uppercase;
+  font-size: 12px !important;
+  cursor: pointer;
+}
+
+.theme {
+  cursor: pointer;
+}
+
+ul li a:not(.active) {
+  color: white;
+}
+
+img {
+  border-radius: 8px;
+}
+
+/* End Global */
+/* Start Home */
+section.games header img {
+  max-height: 30vh;
+  object-fit: cover;
+}
+
+section.games nav {
+  background-color: #3a497b;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+  margin-top: -30px;
+}
+
+.main-section .main-card p {
+  text-align: center;
+}
+
+section.games nav img {
+  width: 45px;
+}
+
+.nav-item .active,
+.nav-link:hover {
+  color: #0c89bb !important;
+}
+
+.main-section .main-card {
+  border: 1px solid var(--border-color);
+  transition: 0.5s all;
+  filter: grayscale(0.7);
+  cursor: pointer;
+  height: 370px;
+}
+.close-btn {
+  cursor: pointer;
+}
+.main-section .main-card:hover {
+  transform: scale(1.03);
+  filter: grayscale(0);
+}
+
+.main-section .main-card span {
+  font-size: 12px;
+}
+
+.main-section .main-card p {
+  font-size: 14px;
+}
+
+.main-section .main-card .card-footer {
+  border-top: 1px solid var(--border-color);
+  background-color: var(--secondory-color);
+}
+
+.main-section .main-card .card-footer span {
+  background-color: var(--btn-main-color);
+}
+
+/* End Home */
+/* Start Details */
+section.details span.category {
+  background-color: #0bb1d2;
+  color: black;
+  font-size: 13px;
+}
+
+section.details p {
+  font-size: 14px;
+}
+
+/* End Details */
+/* Start Loading */
+.loading {
+  position: fixed;
+  z-index: 9;
+  inset: 0;
+  background-color: #272b30e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* End Loadin */

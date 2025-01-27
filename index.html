@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game Over Site" />
+    <meta name="keywords" content="Game Over, موقع العاب">
+    <meta name="author" content="Ahmed Yahya" />
+    <title>Game Reviews</title>
+    <!-- BootStrap File -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!-- Font Awesome File -->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <!-- Css File -->
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+    <section class="games" id="games">
+        <header>
+            <img src="images/wraper.png" class="w-100" alt="Game Photo">
+        </header>
+        <nav class="navbar navbar-expand-lg container col-11 col-md-9 rounded-4 position-sticky top-0 z-1">
+            <div class="container">
+                <div class="d-flex">
+                    <img src="images/logo-sm.png" class="me-1" alt="Logo">
+                    <h1 class="navbar-brand m-auto text-white" href="#">GAME REVIEWS</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto align-items-center mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" aria-current="page" data-category="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" data-category="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" data-category="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" data-category="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" data-category="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" data-category="pixel">pixel</a>
+                        </li>
+                        <div class="mode ms-1">
+                            <li class="nav-item theme">
+                                <i class="fa-solid fa-moon text-white fa-xl dark-mood d-none"></i>
+                            </li>
+                            <li class="nav-item theme">
+                                <i class="fa-regular fa-sun fa-xl text-white light-mood"></i>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-section py-4">
+            <div class="container">
+                <div class="row g-4">
+
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="details d-none" id="details">
+        <div class="container py-4">
+            <div class="pb-4 d-flex justify-content-between align-items-center">
+                <h2>Game Details</h2>
+                <i class="fa-solid fa-xmark fa-2xl close-btn"></i>
+            </div>
+            <div class="row" id="details-content">
+            </div>
+        </div>
+    </section>
+    <div class="loading d-none">
+        <div class="loader"></div>
+    </div>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/index.js" type="module"></script>
+</body>
+
+</html>
