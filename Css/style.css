@@ -8,12 +8,12 @@
 }
 
 [data-theme="white"] {
-  --main-color: #ffffff; /* خلفية بيضاء نقية */
-  --secondory-color: #f9fafb; /* خلفية ثانوية رمادية فاتحة جدًا */
-  --color-text: #1a1a1a; /* لون النص رمادي غامق قريب من الأسود */
-  --btn-main-color: #f0f4ff; /* لون الأزرار أزرق باهت ناعم */
-  --btn-hover-color: #d6e4ff; /* لون هوفر للأزرار */
-  --border-color: #e5e7eb; /* لون الحدود رمادي فاتح متناسق */
+  --main-color: #ffffff;
+  --secondory-color: #f9fafb;
+  --color-text: #1a1a1a;
+  --btn-main-color: #f0f4ff;
+  --btn-hover-color: #d6e4ff;
+  --border-color: #e5e7eb;
 }
 
 /* End theme customize */
