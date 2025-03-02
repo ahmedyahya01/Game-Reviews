@@ -30,7 +30,7 @@ export class Home {
       },
     };
     const requestApi = await fetch(
-      `https:// ?category=${cat}`,
+      `https://free-to-play-games-database.p.rapidapi.com/api/games?category=${cat}`,
       options
     );
     const response = await requestApi.json();
